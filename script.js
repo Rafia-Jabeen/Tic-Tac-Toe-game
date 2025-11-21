@@ -38,20 +38,25 @@ const resetGame = () => {
 
 resetBtn.addEventListener("click", resetGame);
 restartBtn.addEventListener("click", resetGame);
-
+let count = 0;
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
+        count ++;
         if(turnO){
             box.innerText = "O";
+            box.style.color = "#472d30";
             turnO = false;
         }else{
             box.innerText = "X";
+            box.style.color = "#e26d5c";
             turnO = true;
         }
         box.disabled = true;
         checkWinner();
+        
     });
 });
+
 
 const checkWinner = () => {
     for (let pattern of winningPattern){
@@ -62,6 +67,8 @@ const checkWinner = () => {
         if(pos1val != "" && pos2val != "" && pos3val != ""){
             if(pos1val === pos2val && pos2val === pos3val){
                 showWinner(pos1val);
+            }else if(count===9){
+                drawCondition();
             }
         }
     }
@@ -73,3 +80,9 @@ const showWinner = (winner) => {
     disableBoxes();
 };
 
+const drawCondition = () => {
+    count=0;
+    winningMsg.innerText = "Match Draw! No one is Winner:(";
+    winningMsgContainer.classList.remove("hide");
+    disableBoxes();
+};

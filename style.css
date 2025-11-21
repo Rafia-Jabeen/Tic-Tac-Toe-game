@@ -3,8 +3,8 @@
     padding: 0;
 }
 body{
-    background-color: #000814;
-    color: #ffc300;
+    background-color: #f7e1d7;
+    color: #472d30;
     text-align: center;
 }
 
@@ -32,23 +32,23 @@ h1{
 
 /*Buttons: restart & reset*/
 #restart-btn{
-    border: 3px solid #ffc300;
+    border: 3px solid #723d46;
     height: 6vh;
     width: 7vw;
     border-radius: 8px;
-    background-color: #ffd60a;
-    color: #003566;
+    background-color: #ffe1a8;
+    color: #e26d5c;
     font-size: clamp(0.3rem, 2vw, 1.2rem);
     font-weight: bold;
 }
 #reset-btn{
-    border: 3px solid #ffc300;
+    border: 3px solid #723d46;
     height: 6vh;
     width: 8%;
     aspect-ratio: 1/2;
     border-radius: 8px;
-    background-color: #ffd60a;
-    color: #003566;
+    background-color: #ffe1a8;
+    color: #e26d5c;
     font-size: clamp(0.3rem, 2vw, 1.2rem);
     font-weight: bold;
 }
@@ -84,9 +84,9 @@ h1{
     width: 26%;
     aspect-ratio: 1/1;
     border-radius: 8px;
-    border: 5px solid #ffc300;
-    background-color: #ffd60a;
-    color: #001d3d;
+    border: 5px solid #723d46;
+    background-color: #ffe1a8;
+    color: #e26d5c;
     font-size: clamp(5vmin, 5vw, 10vmin);
     font-weight: bold;
     display: flex;
