@@ -31,6 +31,7 @@ const enableBoxes = () => {
 };
 
 const resetGame = () => {
+    count = 0;
     turnO = true;
     enableBoxes();
     winningMsgContainer.classList.add("hide");
