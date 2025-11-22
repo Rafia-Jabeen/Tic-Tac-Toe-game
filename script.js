@@ -75,6 +75,7 @@ const checkWinner = () => {
 };
 
 const showWinner = (winner) => {
+    count=0;
     winningMsg.innerText = `Congratulations! Winner is Player ${winner}`;
     winningMsgContainer.classList.remove("hide");
     disableBoxes();
